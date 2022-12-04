@@ -28,7 +28,7 @@ body {
 }
 
 .header__inner {
-  width: 800px;
+  width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -42,21 +42,29 @@ body {
   color: #212121;
 }
 
+.header__menu {
+  font-size: 32px;
+  margin: 10px auto;
+  display: block;
+  width: 30px;
+}
+
+
 /*
  * Top level navigation
  */
 
 .nav {
-  width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .nav__list {
   width: 100%;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
 .nav__item {
@@ -65,11 +73,12 @@ body {
   width: 24%;
   text-align: center;
   line-height: 24px;
-  padding: 24px;
   text-transform: uppercase;
 }
 
 .nav a {
+  display: inline-block;
+  padding: 1.3em;
   text-decoration: none;
   color: #616161;
 }
@@ -119,7 +128,7 @@ body {
  */
 
 main {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -135,13 +144,8 @@ main {
  * headline
  */
 
-.headline {
-  overflow: auto;
-}
-
 .headline__figure {
-  width: 450px;
-  float: left;
+  width: 100%;
 }
 
 .headline__figure img {
@@ -157,18 +161,17 @@ main {
 }
 
 .headline__content {
-  width: 600px;
-  float: left;
-  padding: 16px 32px;
+  width: 100%;
+  padding: 16px 0;
 }
 
 .headline__title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
 }
 
 .headline__description {
-  font-size: 16px;
+  font-size: 12px;
   margin-top: 12px;
 }
 
@@ -194,7 +197,7 @@ main {
  */
 
 .latest {
-  width: 1000px;
+  width: 100%;
   margin: 60px auto;
   text-align: center;
 }
@@ -218,7 +221,6 @@ main {
 .posts {
   margin: 32px auto auto;
   text-align: left;
-  overflow: auto;
 }
 
 /*
@@ -226,16 +228,14 @@ main {
  */
 
 .post-item {
-  float: left;
-  margin: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 300px;
+  width: 100%;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .post-item__content {
-  padding: 16px 32px 32px 32px;
+  padding: 16px;
 }
 
 .post-item__thumbnail {
@@ -255,7 +255,7 @@ main {
 
 .post-item__title {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 16px;
   transition: 0.3s opacity;
 }
@@ -271,7 +271,7 @@ main {
 
 .post-item__description {
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5em;
 }
 
@@ -298,6 +298,8 @@ footer li {
 }
 
 footer a {
+  display: inline-block;
+  padding: 1.3em;
   text-decoration: none;
   color: #fff
 }
